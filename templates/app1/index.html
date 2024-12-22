@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Shopping Cart</title>
+  </head>
+  <style>
+    body{
+      margin-top: 10em;
+      background-color: bisque;
+    }
+    table{
+      background-color: aquamarine;
+      color: red;
+    }
+  </style>
+  <body>
+    <center>
+      <form action="/cart">
+        <table border="1" width="45%">
+          <tr>
+            <td>Product Name</td>
+            <td><input type="text" name="pname" /></td>
+          </tr>
+          <tr>
+            <td>Qty</td>
+            <td><input type="text" name="qty" /></td>
+          </tr>
+          <tr>
+            <td><input type="submit" value="Add to Cart" name="b"/></td>
+            <td><input type="submit" value="Update to Cart" name="b"/></td>
+          </tr>
+          <tr>
+            <td><input type="submit" value="Delete from Cart" name="b"/></td>
+            <td><input type="submit" value="View Cart" name="b"/></td>
+          </tr>
+        </table>
+      </form>
+      <h3>{{msg}}</h3>
+    </center>
+  </body>
+</html>
